@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="seno-cosseno"/>
+        <attribute name="authors" value="silvi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-21 09:00:42 "/>
+        <attribute name="created" value="c2lsdmk7U0lMVklBOzIwMjYtMDgtMjE7IjA4OjIyOjIzICI7MjIwMA=="/>
+        <attribute name="edited" value="c2lsdmk7U0lMVklBOzIwMjYtMDgtMjE7IjA5OjAwOjQyICI7MTsyMzA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <declare name="resultado" type="Real" array="False" size=""/>
+            <assign variable="opcao" expression="1"/>
+            <while expression="opcao&lt;&gt;0">
+                <output expression="&quot;1-Seno&quot;" newline="True"/>
+                <output expression="&quot;2-Cosseno&quot;" newline="True"/>
+                <output expression="&quot;0-Sair&quot;" newline="True"/>
+                <input variable="opcao"/>
+                <if expression="opcao=1">
+                    <then>
+                        <output expression="&quot;Digite o &#226;ngulo em graus:&quot;" newline="True"/>
+                        <input variable="num1"/>
+                        <assign variable="resultado" expression="Sin(num1 * 3.14159/180)"/>
+                        <output expression="&quot;O resultado do seno &#233;: &quot;&amp;resultado" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="opcao=2">
+                            <then>
+                                <output expression="&quot;Digite o angulo:&quot;" newline="True"/>
+                                <input variable="num1"/>
+                                <assign variable="resultado" expression="Cos(num1 * 3.14159/180)"/>
+                                <output expression="&quot;O resultado do cosseno &#233;: &quot;&amp;resultado" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
