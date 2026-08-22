@@ -137,6 +137,12 @@ O método converge rapidamente (convergência quadrática) para a maioria dos va
 
 # 8 - Módulo
 
+  O fluxograma começa declarando as variáveis numero1, numero2 e resultado. 
+  Depois, o programa pede e lê dois números. Em seguida, verifica se numero2 é igual a zero. 
+  Se for, mostra uma mensagem informando que não é possível calcular o módulo por zero. 
+  Se não for, calcula numero1 % numero2, que representa o resto da divisão, e armazena o resultado. 
+  Por fim, mostra o resultado e encerra o programa.
+
 # 9 - Seno
 
 # 10 - Cosseno
