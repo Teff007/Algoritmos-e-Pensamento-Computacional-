@@ -92,6 +92,14 @@ Quando a condição referente à opção 03 é falsa, o fluxograma segue para um
 Assim, quando o usuário seleciona a opção 04, o fluxograma solicita os dois valores, realiza a divisão entre eles e apresenta o resultado na tela.
 
 # 5 - Potenciação
+  O fluxograma representa um algoritmo para calcular uma potência usando dois números inteiros. 
+  Primeiro, o programa começa e mostra a mensagem “Faça uma equação de potenciação”. 
+  Em seguida, são declaradas três variáveis inteiras: a, b e c, sendo a o primeiro número, b o segundo número e c o resultado.
+  Depois, o programa pede ao usuário o primeiro número e o armazena em a por meio do comando “Ler a”. 
+  Em seguida, solicita o segundo número e o armazena em b usando “Ler b”. 
+  Após receber os dois valores, o programa executa c ← a^b, ou seja, calcula a elevado à potência b e guarda o resultado em c. 
+  Por exemplo, se a = 2 e b = 3, então c = 2³ = 8. 
+  Por fim, o programa exibe “A elevado por B é” junto com o valor de c e chega ao bloco “Fim”, encerrando a execução.
 
 # 6 - Raiz quadrada
   Este módulo implementa o cálculo da raiz quadrada de um número real utilizando o método iterativo de Newton-Raphson (também conhecido como método babilônico), 
