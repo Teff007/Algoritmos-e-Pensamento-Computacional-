@@ -17,14 +17,15 @@ Primeiro trabalho da disciplina Algoritmo e Pensamento Computacional.
 11 - Sair
 
 # 1 - Adição
-O fluxograma representa um algoritmo para somar dois números inteiros. 
-Primeiro, o programa inicia e mostra uma mensagem informando que será realizada uma soma. Em seguida, são declaradas três variáveis inteiras: a, b e c, sendo a responsável pelo primeiro número, b pelo segundo e c pelo resultado.
+O fluxograma representa o algoritmo desenvolvido para realizar a soma de dois números.
 
-Depois, o programa pede ao usuário o primeiro valor e utiliza “Ler a” para armazená-lo na variável a. Em seguida, pede o segundo valor e utiliza “Ler b” para armazená-lo em b. 
-Após receber os dois números, o programa realiza o processamento através da instrução c ← a + b, que significa somar a e b e guardar o resultado em c.
+Primeiramente, o programa é iniciado e são declaradas as variáveis que serão utilizadas durante a execução. A variável inteira “opçao” é responsável por armazenar a escolha da operação feita pelo usuário. Em seguida, são declaradas as variáveis reais “num1”, “num2” e “resultado”, que serão utilizadas, respectivamente, para armazenar os dois números informados pelo usuário e o resultado da operação.
 
-Por fim, o programa exibe na tela a mensagem informando o resultado da soma e chega ao “Fim”, encerrando a execução. 
-Portanto, o fluxo segue a lógica básica de entrada → processamento → saída: recebe dois números, realiza a soma e apresenta o resultado.
+Após a declaração das variáveis, o programa apresenta ao usuário as opções de operações disponíveis e solicita que ele escolha qual deseja realizar.
+
+Depois que a opção de soma é selecionada, o programa solicita que o usuário informe o primeiro número, que será armazenado na variável “num1”. Em seguida, solicita o segundo número, armazenado na variável “num2”.
+
+Por fim, o programa realiza a operação num1 + num2 e armazena o resultado na variável “resultado”. Dessa forma, o valor obtido é apresentado ao usuário como resultado da soma.
 
 # 2 - Subtração
 Este módulo implementa um algoritmo simples que realiza a subtração entre dois números reais informados pelo usuário, 
@@ -142,6 +143,17 @@ O método converge rapidamente (convergência quadrática) para a maioria dos va
   Casos especiais (número negativo e número zero) são tratados antes do laço para evitar divisão por zero e resultados matematicamente inválidos.
   
 # 7 - Porcentagem
+O fluxograma representa o algoritmo desenvolvido para realizar a porcentagem de um número pelo outro.
+
+Primeiramente, o programa é iniciado e são declaradas as variáveis que serão utilizadas durante a execução. A variável inteira “opção” é responsável por armazenar a escolha da operação feita pelo usuário. Em seguida, são declaradas as variáveis reais “num1”, “num2” e “resultado”, que serão utilizadas, respectivamente, para armazenar os dois números informados pelo usuário e o resultado da operação.
+
+Após a declaração das variáveis, o programa apresenta ao usuário as opções de operações disponíveis e solicita que ele escolha qual deseja realizar.
+
+Depois que a opção de porcentagem é selecionada, o programa solicita que o usuário informe se a porcentagem será utilizada para acrescentar ou subtrair um determinado valor inicial.
+
+Quando a opção selecionada for 1 (verdadeira), indicando que a porcentagem deverá ser acrescentada, o programa solicita que o usuário informe o valor total, que será armazenado na variável “num1”. Em seguida, solicita o valor da porcentagem, armazenado na variável “num2”. Após receber os valores, o programa realiza a operação num1 × (1 + num2/100) e armazena o resultado na variável “resultado”, que será apresentado ao usuário.
+
+Caso a opção selecionada seja diferente de 1 (falsa), indicando que a porcentagem deverá ser subtraída, o programa também solicita o valor total e o valor da porcentagem, armazenando-os nas variáveis “num1” e “num2”, respectivamente. Nesse caso, a operação realizada será num1 × (1 - num2/100). O resultado da operação será armazenado na variável “resultado” e apresentado ao usuário, finalizando essa etapa do programa.
 
 # 8 - Módulo
 
@@ -159,7 +171,9 @@ O método converge rapidamente (convergência quadrática) para a maioria dos va
 
 # Observações
 
-Sara
+Sara (Adição e Porcentagem)
+Soma: O programa solicita dois números ao usuário e armazena-os nas variáveis num1 e num2. Em seguida, realiza a soma dos dois valores e armazena o resultado na variável resultado.
+Porcentagem: O usuário escolhe se deseja acrescentar ou subtrair uma porcentagem de um valor inicial. O programa recebe os valores, realiza o cálculo correspondente e apresenta o resultado.
 
 Stéffany ( multiplicação e Divisão)
 O fluxo segue inicialmente pela escolha da operação. 
