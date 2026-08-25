@@ -164,8 +164,42 @@ Caso a opção selecionada seja diferente de 1 (falsa), indicando que a porcenta
   Por fim, mostra o resultado e encerra o programa.
 
 # 9 - Seno
+Comecei com o seno
+Coloquei variáveis:
+
+contador (Inteiro) — guarda o ângulo atual, começa em 1
+seno (Real) — guarda o resultado do cálculo do seno
+
+Adicionei a condição do laço (while):
+O laço roda enquanto contador<>11. Como o contador começa em 1 e vai aumentando, ele passa pelos ângulos 1 até 10 e para exatamente quando chega em 11.
+
+Como funciona dentro do laço, em ordem:
+1º Atribuir: seno <- Sin(contador * 3.14159/180)
+2º Atribuir: contador <- contador + 1
+
+O bloco contador <- contador + 1 fica no final do laço, dentro dele. É ele que faz o contador avançar a cada volta — sem esse incremento o laço nunca chegaria em 11 e ficaria rodando pra sempre.
 
 # 10 - Cosseno
+Seno e o cosseno juntos
+
+Criei mais variáveis:
+
+contador (Inteiro) — guarda o ângulo atual, começa em 1
+seno (Real) — guarda o resultado do cálculo do seno
+cosseno (Real) — guarda o resultado do cálculo do cosseno
+
+Adicionei a condição do laço (while):
+O laço roda enquanto contador<>11. Como o contador começa em 1 e vai aumentando, ele passa pelos ângulos 1 até 10 e para exatamente quando chega em 11.
+
+Como funciona dentro do laço, em ordem:
+1º Atribuir: seno <- Sin(contador * 3.14159/180)
+2º Atribuir: cosseno <- Cos(contador * 3.14159/180)
+3º Escrever: contador & " -> Seno: " & seno & " Cosseno: " & cosseno
+4º Atribuir: contador <- contador + 1
+
+O bloco contador <- contador + 1 fica no final do laço, dentro dele. É ele que faz o contador avançar a cada volta — sem esse incremento o laço nunca chegaria em 11 e ficaria rodando pra sempre.
+
+
 
 # 11 - Sair
 
@@ -183,7 +217,8 @@ Esse processo permite que cada operação seja executada de acordo com a escolha
 
 Ana Beatriz
 
-Safira
+Safira (Seno e Cosseno)
+Assim ele calcula o seno e o cosseno dos ângulos de 1 até 10, um por vez, e encerra automaticamente quando o contador chega a 11 — sem precisar que o usuário digite nada para parar.
 
 Helena ( Subtração e Raiz Quadrada )
   Algoritmo de Subtração: Programa simples que solicita ao usuário dois valores reais, valorA e valorB, calcula a diferença entre eles (resultado <- valorA - valorB) e exibe o resultado na tela.
