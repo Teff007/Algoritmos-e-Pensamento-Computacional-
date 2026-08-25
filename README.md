@@ -95,12 +95,12 @@ Assim, quando o usuário seleciona a opção 04, o fluxograma solicita os dois v
 # 5 - Potenciação
   O fluxograma representa um algoritmo para calcular uma potência usando dois números inteiros. 
   Primeiro, o programa começa e mostra a mensagem “Faça uma equação de potenciação”. 
-  Em seguida, são declaradas três variáveis inteiras: a, b e c, sendo a o primeiro número, b o segundo número e c o resultado.
-  Depois, o programa pede ao usuário o primeiro número e o armazena em a por meio do comando “Ler a”. 
-  Em seguida, solicita o segundo número e o armazena em b usando “Ler b”. 
-  Após receber os dois valores, o programa executa c ← a^b, ou seja, calcula a elevado à potência b e guarda o resultado em c. 
+  Em seguida, são declaradas três variáveis inteiras: a, b e c, sendo "a" o primeiro número, "b" o segundo número e "c" o resultado.
+  Depois, o programa pede ao usuário o primeiro número e o armazena em "A" por meio do comando “Ler a”. 
+  Em seguida, solicita o segundo número e o armazena em "b" usando “Ler b”. 
+  Após receber os dois valores, o programa executa c ← a^b, ou seja, calcula "a" elevado à potência de "b" e guarda o resultado em "c". 
   Por exemplo, se a = 2 e b = 3, então c = 2³ = 8. 
-  Por fim, o programa exibe “A elevado por B é” junto com o valor de c e chega ao bloco “Fim”, encerrando a execução.
+  Por fim, o programa exibe “A elevado por B é” junto com o valor de "c" e chega ao bloco “Fim”, encerrando a execução.
 
 # 6 - Raiz quadrada
   Este módulo implementa o cálculo da raiz quadrada de um número real utilizando o método iterativo de Newton-Raphson (também conhecido como método babilônico), 
@@ -157,10 +157,12 @@ Caso a opção selecionada seja diferente de 1 (falsa), indicando que a porcenta
 
 # 8 - Módulo
 
-  O fluxograma começa declarando as variáveis numero1, numero2 e resultado. 
-  Depois, o programa pede e lê dois números. Em seguida, verifica se numero2 é igual a zero. 
-  Se for, mostra uma mensagem informando que não é possível calcular o módulo por zero. 
-  Se não for, calcula numero1 % numero2, que representa o resto da divisão, e armazena o resultado. 
+  O fluxograma começa declarando três variáveis numero1, numero2 e resultado. 
+  Depois, o programa mostra "Digite o primeiro número:" é pede para ler o primeiro número representado pela variável numero1. 
+  Em seguida mostra "Digite o segundo número:" e pede para ler o segundo numero
+  representado pela variável numero2, depois verifica se numero2 é igual a zero. 
+  Se for, mostra uma mensagem informando que "não é possível calcular o módulo por zero.". 
+  Se não for, calcula numero1 % numero2, que representa o resto da divisão, e armazena na variável resultado. 
   Por fim, mostra o resultado e encerra o programa.
 
 # 9 - Seno
