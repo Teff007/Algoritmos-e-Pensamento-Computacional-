@@ -207,11 +207,11 @@ O bloco contador <- contador + 1 fica no final do laço, dentro dele. É ele que
 
 # Observações
 
-Sara (Adição e Porcentagem)
+Sara Giovanna (Adição e Porcentagem)
 Soma: O programa solicita dois números ao usuário e armazena-os nas variáveis num1 e num2. Em seguida, realiza a soma dos dois valores e armazena o resultado na variável resultado.
 Porcentagem: O usuário escolhe se deseja acrescentar ou subtrair uma porcentagem de um valor inicial. O programa recebe os valores, realiza o cálculo correspondente e apresenta o resultado.
 
-Stéffany ( multiplicação e Divisão)
+Stéffany Rodrigues ( multiplicação e Divisão)
 O fluxo segue inicialmente pela escolha da operação. 
 Quando o usuário seleciona a opção 03, o caminho verdadeiro realiza a multiplicação. 
 Caso a opção 03 seja falsa, o fluxo verifica a opção 04 e, se ela for verdadeira, realiza a divisão. 
@@ -219,10 +219,10 @@ Esse processo permite que cada operação seja executada de acordo com a escolha
 
 Ana Beatriz
 
-Safira (Seno e Cosseno)
+Safira Carvalho  (Seno e Cosseno)
 Assim ele calcula o seno e o cosseno dos ângulos de 1 até 10, um por vez, e encerra automaticamente quando o contador chega a 11 — sem precisar que o usuário digite nada para parar.
 
-Helena ( Subtração e Raiz Quadrada )
+Helena Botelho ( Subtração e Raiz Quadrada )
   Algoritmo de Subtração: Programa simples que solicita ao usuário dois valores reais, valorA e valorB, calcula a diferença entre eles (resultado <- valorA - valorB) e exibe o resultado na tela.
   Algoritmo de Cálculo de Raiz Quadrada: Programa que calcula a raiz quadrada de um número real informado pelo usuário utilizando o método iterativo de Newton-Raphson. 
   Antes de iniciar as iterações, trata os casos especiais de número negativo (sem raiz real) e número zero; nos demais casos, aproxima o valor da raiz repetidamente até que o erro entre aproximações sucessivas seja menor que 0.000001, exibindo então o resultado final.
