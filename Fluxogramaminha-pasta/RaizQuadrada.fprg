@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="RaizQuadrada"/>
+        <attribute name="authors" value="helmo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-20 12:01:56 "/>
+        <attribute name="created" value="aGVsbW87REVTS1RPUC03M0ZKNkpNOzIwMjYtMDgtMjA7IjExOjE2OjQwICI7Mjc1OQ=="/>
+        <attribute name="edited" value="aGVsbW87REVTS1RPUC03M0ZKNkpNOzIwMjYtMDgtMjA7IjEyOjAxOjU2ICI7MTsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, aproxA, aproxB, erro" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva o n&#250;mero ao qual quer descobrir a raiz&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&lt;0">
+                <then>
+                    <output expression="&quot;N&#227;o existe raiz quadrada real desse n&#250;mero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero=0">
+                        <then>
+                            <output expression="&quot;A raiz &#233; 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="aproxA" expression="numero"/>
+                            <assign variable="erro" expression="1"/>
+                            <while expression="erro&gt;0.000001">
+                                <assign variable="aproxB" expression="(aproxA+numero/aproxA)/2"/>
+                                <assign variable="erro" expression="aproxB-aproxA"/>
+                                <if expression="erro&lt;0">
+                                    <then>
+                                        <assign variable="erro" expression="erro*-1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <assign variable="aproxA" expression="aproxB"/>
+                            </while>
+                            <output expression="&quot;Raiz quadrada = &quot;&amp;aproxA&amp;&quot;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
