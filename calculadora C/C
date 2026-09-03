@@ -1,1 +1,53 @@
-calculadora c 
+##("=== CALCULADORA ===\n\n")##
+
+  ("Escolha a operacao:\n")
+  ("+      para soma\n")
+  ("-      para subtracao\n")
+  ("*      para multiplicacao\n")
+  ("/      para divisao\n")
+  ("!      para fatorial\n")
+  ("tan    para tangente\n")
+  ("rad    para converter para radianos\n")
+  ("sqrt   para raiz quadrada\n")
+  ("log    para logaritmo natural\n")
+  ("floor  para arredondar para baixo\n")
+  ("pow    para potencia\n")
+  ("cos    para cosseno\n")
+  ("exp    para exponencial\n")
+  ("mod    para modulo\n")
+  ("sin    para seno\n")
+  ("ceil   para arredondar para cima\n")
+  ("abs    para valor absoluto\n")
+  ("deg    para converter para graus\n\n")
+
+Stéffany Rodrigues:
+  Criei uma calculadora simples em C que executa 4 operações: multiplicação, raiz quadrada, logaritmo natural e arredondamento para baixo (floor).
+
+Bibliotecas que usei
+
+Incluí três bibliotecas:
+
+stdio.h — para usar printf() (mostrar mensagens) e scanf() (ler o que o usuário digita)
+math.h — porque o C não tem funções matemáticas prontas como raiz quadrada; foi dali que peguei sqrt(), log() e floor()
+string.h — para poder comparar textos com strcmp(), já que preciso saber qual operação o usuário escolheu
+Variáveis
+
+Declarei um vetor de caracteres char operacao[10] para guardar o nome da operação digitada (tipo "sqrt" ou "log"), e três variáveis double (num1, num2, resultado) para trabalhar com números decimais.
+
+Como funciona o fluxo
+Mostro um menu com as opções disponíveis usando printf().
+Leio a operação escolhida com scanf("%9s", operacao) — limitei a 9 caracteres pra caber no vetor de 10 (o último espaço é reservado pro caractere que marca o fim da string).
+Uso uma sequência de if / else if comparando a string digitada com cada operação, usando strcmp(). Quando as strings são iguais, strcmp() retorna 0, então comparo com == 0.
+As operações
+Multiplicação: peço dois números e calculo num1 * num2.
+Raiz quadrada: peço um número e, antes de calcular, verifico se ele é negativo (porque raiz de negativo não existe nos reais). Se estiver ok, uso sqrt().
+Logaritmo natural: mesma lógica, mas verifico se o número é menor ou igual a zero antes de aplicar log().
+Floor: peço um número e aplico floor(), que arredonda pra baixo (inclusive com negativos, tipo floor(-5.2) dá -6).
+
+Em todos os casos, mostro o resultado com printf("Resultado: %.2lf\n", resultado), formatando com 2 casas decimais.
+
+Tratamento de erro
+
+Se o usuário digitar algo que não seja nenhuma das opções válidas, caio num else final que mostra "Operacao invalida!".
+
+No fim, o return 0 indica que o programa terminou sem problemas.
