@@ -1,1 +1,97 @@
-kkkkkk
+# Sistema Inteligente de Monitoramento Industrial
+
+## 1. Identificação
+
+**Aluno:** Steffany Rodrigues  
+**Disciplina:** Programação em C  
+**Professora:** Profa. Karla Sartin  
+**Título do projeto:** Sistema Inteligente de Monitoramento Industrial
+
+---
+
+## 2. Objetivo
+
+O objetivo deste projeto é desenvolver um programa em linguagem C capaz de
+monitorar temperaturas de uma máquina industrial.
+
+O programa recebe um limite de temperatura definido pelo usuário e, em seguida,
+realiza várias leituras de temperatura. Durante o monitoramento, o sistema
+verifica se as temperaturas estão acima do limite de segurança e encerra
+automaticamente quando identifica três temperaturas consecutivas acima do limite.
+
+Além disso, o programa apresenta um relatório final contendo a quantidade de
+temperaturas registradas, a maior temperatura, a menor temperatura, a média e
+o percentual de temperaturas acima do limite.
+
+---
+
+## 3. Funcionamento do programa
+
+### Definição do limite de temperatura
+
+Primeiramente, o programa solicita ao usuário que informe o limite de
+temperatura que será utilizado durante o monitoramento.
+
+O valor informado é validado para evitar entradas inválidas.
+
+### Leitura das temperaturas
+
+Após definir o limite, o programa começa a receber as temperaturas do sensor,
+uma por vez.
+
+A cada nova leitura, o programa:
+
+- registra a temperatura;
+- atualiza a maior temperatura;
+- atualiza a menor temperatura;
+- soma a temperatura para calcular a média;
+- contabiliza a quantidade de leituras;
+- verifica se a temperatura está acima do limite.
+
+### Tratamento de valores inválidos
+
+O programa verifica se os valores informados são válidos. Caso o usuário
+informe um valor inválido, o sistema apresenta uma mensagem de erro e solicita
+uma nova entrada.
+
+### Temperaturas acima do limite
+
+Quando uma temperatura ultrapassa o limite definido pelo usuário, o programa
+exibe uma mensagem de alerta informando que a temperatura está acima do limite.
+
+### Contagem de temperaturas consecutivas
+
+O programa possui um contador para identificar temperaturas acima do limite
+que acontecem de forma consecutiva.
+
+Quando uma temperatura está acima do limite, o contador é aumentado em 1.
+
+Quando uma temperatura está dentro do limite, o contador é reiniciado para 0.
+
+Dessa forma, somente temperaturas acima do limite que acontecem
+consecutivamente são consideradas para o encerramento automático.
+
+### Encerramento do monitoramento
+
+O programa encerra automaticamente quando identifica três temperaturas
+consecutivas acima do limite de segurança.
+
+Após o encerramento, o sistema apresenta um relatório final com os resultados
+do monitoramento.
+
+---
+
+## 4. Estruturas de repetição utilizadas
+
+### while
+
+O comando `while` é utilizado para manter o monitoramento das temperaturas
+enquanto a quantidade de temperaturas consecutivas acima do limite for menor
+que 3.
+
+Exemplo:
+
+```c
+while (consecutivas < 3) {
+    // leitura e análise das temperaturas
+}
