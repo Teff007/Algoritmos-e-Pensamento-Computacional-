@@ -88,3 +88,5 @@ O comando `while` é utilizado para manter o monitoramento das temperaturas
 enquanto a quantidade de temperaturas consecutivas acima do limite for menor
 que 3.
 
+Por que você escolheu while, do...while ou uma combinação das duas estruturas? Em qual parte do algoritmo a diferença entre testar a condição antes ou depois da execução foi importante para sua solução?
+
