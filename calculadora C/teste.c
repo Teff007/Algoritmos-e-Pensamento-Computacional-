@@ -6,82 +6,94 @@ int main(void) {
 
     char operacao[10];
     double num1, num2, resultado;
+    char continuar; 
 
-    printf("=== CALCULADORA ===\n\n");
+    do { // <-- INICIO DO LACO do...while
 
-    printf("Escolha a operacao:\n");
-    printf("*      para multiplicacao\n");
-    printf("sqrt   para raiz quadrada\n");
-    printf("log    para logaritmo natural\n");
-    printf("floor  para arredondar para baixo\n\n");
+        printf("=== CALCULADORA ===\n\n");
 
-    printf("Digite a operacao: ");
-    scanf("%9s", operacao);
+        printf("Escolha a operacao:\n");
+        printf("*      para multiplicacao\n");
+        printf("sqrt   para raiz quadrada\n");
+        printf("log    para logaritmo natural\n");
+        printf("floor  para arredondar para baixo\n\n");
 
-    if (strcmp(operacao, "*") == 0) {
+        printf("Digite a operacao: ");
+        scanf("%9s", operacao);
 
-        printf("Digite o primeiro numero: ");
-        scanf("%lf", &num1);
+        if (strcmp(operacao, "*") == 0) {
 
-        printf("Digite o segundo numero: ");
-        scanf("%lf", &num2);
+            printf("Digite o primeiro numero: ");
+            scanf("%lf", &num1);
 
-        resultado = num1 * num2;
+            printf("Digite o segundo numero: ");
+            scanf("%lf", &num2);
 
-        printf("Resultado: %.2lf\n", resultado);
-    }
-
-
-    else if (strcmp(operacao, "sqrt") == 0) {
-
-        printf("Digite o numero: ");
-        scanf("%lf", &num1);
-
-        if (num1 < 0) {
-
-            printf("Erro: nao existe raiz quadrada real de numero negativo!\n");
-
-        } else {
-
-            resultado = sqrt(num1);
+            resultado = num1 * num2;
 
             printf("Resultado: %.2lf\n", resultado);
         }
-    }
 
 
-    else if (strcmp(operacao, "log") == 0) {
+        else if (strcmp(operacao, "sqrt") == 0) {
 
-        printf("Digite o numero: ");
-        scanf("%lf", &num1);
+            printf("Digite o numero: ");
+            scanf("%lf", &num1);
 
-        if (num1 <= 0) {
+            if (num1 < 0) {
 
-            printf("Erro: o numero deve ser positivo!\n");
+                printf("Erro: nao existe raiz quadrada real de numero negativo!\n");
 
-        } else {
+            } else {
 
-            resultado = log(num1);
+                resultado = sqrt(num1);
+
+                printf("Resultado: %.2lf\n", resultado);
+            }
+        }
+
+
+        else if (strcmp(operacao, "log") == 0) {
+
+            printf("Digite o numero: ");
+            scanf("%lf", &num1);
+
+            if (num1 <= 0) {
+
+                printf("Erro: o numero deve ser positivo!\n");
+
+            } else {
+
+                resultado = log(num1);
+
+                printf("Resultado: %.2lf\n", resultado);
+            }
+        }
+
+        else if (strcmp(operacao, "floor") == 0) {
+
+            printf("Digite o numero: ");
+            scanf("%lf", &num1);
+
+            resultado = floor(num1);
 
             printf("Resultado: %.2lf\n", resultado);
         }
-    }
 
-    else if (strcmp(operacao, "floor") == 0) {
+        else {
 
-        printf("Digite o numero: ");
-        scanf("%lf", &num1);
+            printf("Operacao invalida!\n");
+        }
 
-        resultado = floor(num1);
+        // Pergunta se o usuario quer repetir o processo
+        printf("\nDeseja realizar outra operacao? (s/n): ");
+        scanf(" %c", &continuar);
+        printf("\n");
 
-        printf("Resultado: %.2lf\n", resultado);
-    }
+    } while (continuar == 's' || continuar == 'S'); // <-- FIM DO LACO do...while
 
-    else {
-
-        printf("Operacao invalida!\n");
-    }
-
+    printf("Encerrando a calculadora. Ate mais!\n");
 
     return 0;
+}
 }
