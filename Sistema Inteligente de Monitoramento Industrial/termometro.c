@@ -2,9 +2,7 @@
 
 int main(void) {
 
-    // =========================================================
-    // DECLARAÇÃO DAS VARIÁVEIS
-    // =========================================================
+// DECLARAÇÃO DAS VARIÁVEIS
 
     double limite;
     double temperatura;
@@ -19,26 +17,18 @@ int main(void) {
     int acimaLimite = 0;
     int entradaValida;
 
-
-    // =========================================================
     // TÍTULO DO PROGRAMA
-    // =========================================================
 
     printf("=====================================\n");
     printf(" SISTEMA DE MONITORAMENTO INDUSTRIAL\n");
     printf("=====================================\n\n");
 
 
-    // =========================================================
     // DEFINIÇÃO E VALIDAÇÃO DO LIMITE
-    // =========================================================
-    // O do...while garante que o usuário tenha que informar
-    // um valor pelo menos uma vez.
-    //
-    // O scanf retorna 1 quando consegue ler corretamente um
-    // número. Se o usuário digitar uma letra, por exemplo "p",
-    // o scanf retorna 0.
-    // =========================================================
+   
+    // O do...while garante que o usuário tenha que informar um valor pelo menos uma vez.
+    // O scanf retorna 1 quando consegue ler corretamente um número. Se o usuário digitar uma letra, por exemplo "p", o scanf retorna 0.
+
 
     do {
 
@@ -68,22 +58,16 @@ int main(void) {
     } while (entradaValida == 0);
 
 
-    // =========================================================
     // MONITORAMENTO DAS TEMPERATURAS
-    // =========================================================
-    // O while mantém o programa funcionando enquanto não forem
-    // identificadas 3 temperaturas consecutivas acima do limite.
-    // =========================================================
+
+    // O while mantém o programa funcionando enquanto não forem identificadas 3 temperaturas consecutivas acima do limite.
 
     while (consecutivas < 3) {
 
         printf("\nDigite a temperatura do sensor: ");
 
-
-        // =====================================================
         // VALIDAÇÃO DA TEMPERATURA
-        // =====================================================
-
+    
         if (scanf("%lf", &temperatura) != 1) {
 
             printf("Entrada invalida! Digite um numero.\n");
@@ -91,18 +75,15 @@ int main(void) {
             // Limpa o valor inválido da entrada.
             while (getchar() != '\n');
 
-            // Volta para o início do while sem registrar
-            // essa entrada como uma temperatura.
+            // Volta para o início do while sem registrar essa entrada como uma temperatura.
+           
             continue;
         }
 
 
-        // =====================================================
         // CONTROLE DA MAIOR E MENOR TEMPERATURA
-        // =====================================================
-        // Na primeira leitura, maior e menor recebem o valor
-        // da primeira temperatura.
-        // =====================================================
+        
+        // Na primeira leitura, maior e menor recebem o valor da primeira temperatura.
 
         if (quantidade == 0) {
 
@@ -122,25 +103,21 @@ int main(void) {
             }
         }
 
-
-        // =====================================================
+       
         // SOMA E QUANTIDADE DE TEMPERATURAS
-        // =====================================================
 
         soma += temperatura;
         quantidade++;
 
-
-        // =====================================================
         // VERIFICAÇÃO DO LIMITE DE TEMPERATURA
-        // =====================================================
+    
 
         if (temperatura > limite) {
 
             printf("ALERTA! Temperatura acima do limite!\n");
 
-            // Conta quantas temperaturas acima do limite
-            // foram registradas.
+            // Conta quantas temperaturas acima do limite foram registradas.
+            
             acimaLimite++;
 
             // Aumenta o contador de temperaturas consecutivas.
@@ -154,31 +131,23 @@ int main(void) {
             printf("Temperatura dentro do limite.\n");
 
             // IMPORTANTE:
-            // Se uma temperatura estiver dentro do limite,
-            // a sequência de temperaturas acima do limite
-            // é quebrada.
+            // Se uma temperatura estiver dentro do limite,  a sequência de temperaturas acima do limite é quebrada.
+           
             consecutivas = 0;
         }
     }
 
 
-    // =========================================================
     // CÁLCULO DA MÉDIA
-    // =========================================================
+    
 
     media = soma / quantidade;
 
 
-    // =========================================================
     // CÁLCULO DO PERCENTUAL
-    // =========================================================
-    // Calcula quantas temperaturas ficaram acima do limite
-    // em relação ao total de temperaturas registradas.
-    //
-    // O (double) evita que a divisão seja feita apenas como
-    // número inteiro.
-    // =========================================================
 
+    // Calcula quantas temperaturas ficaram acima do limite em relação ao total de temperaturas registradas. O (double) evita que a divisão seja feita apenas como número inteiro.
+   
     percentual = ((double)acimaLimite / quantidade) * 100;
 
     // RELATÓRIO FINAL
