@@ -15,8 +15,12 @@ Título do projeto: Sistema Inteligente de Monitoramento Industrial
 O objetivo deste projeto é desenvolver um programa em linguagem C capaz de realizar o monitoramento das temperaturas de uma máquina industrial.
 
 O software recebe como entrada um valor limite de temperatura definido pelo usuário e, a partir disso, realiza leituras sucessivas. 
-Durante o monitoramento, o sistema avalia se as medidas ultrapassam o limite de segurança e encerra sua execução automaticamente ao detectar três leituras consecutivas acima desse limite.
-Além disso, o programa gera um relatório final contendo o número total de leituras efetuadas, a maior e a menor temperatura observadas, a temperatura média e o percentual de leituras que excederam o limite.
+
+Durante o monitoramento, o sistema avalia se as medidas ultrapassam o limite de segurança e encerra sua execução automaticamente ao detectar três leituras consecutivas 
+acima desse limite.
+
+Além disso, o programa gera um relatório final contendo o número total de leituras efetuadas, a maior e a menor temperatura observadas, a temperatura média e o 
+percentual de leituras que excederam o limite.
 
 
  3. Funcionamento do programa 
